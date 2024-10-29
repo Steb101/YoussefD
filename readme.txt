@@ -10,40 +10,50 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
-*/13
-- */1 Readme
-- */2 Basic HTML content
-- */2 Basic CSS styling
-- */2 Advanced feature
-- */3 Responsive layout
-- */1 Passes validation checks
-- */2 Embraces spirit of the assignment
+13/13
+- 1/1 Readme
+- 2/2 Basic HTML content
+- 2/2 Basic CSS styling
+- 2/2 Advanced feature
+- 3/3 Responsive layout
+- 1/1 Passes validation checks
+- 2/2 Embraces spirit of the assignment
 
 2. What (a) basic features, (b) CSS features, and (c) advanced features did you include in your portfolio?
 
 (a) Basic features
-
-
+-Landing page
+-Navigation links
+-Resume Page
+-Contact Information
 
 (b) CSS features
-
-
+-Custom styling
+-Background color scheme
+-Response Design
+-Image styling
 
 (c) Advanced features
-
+-External links(email, github)
+-Visual feedback
 
 
 3. How long, in hours, did it take you to complete this assignment?
-
+~4 hours.
 
 
 4. What online resources did you consult when completing this assignment? (list specific URLs)
-
-
+-https://www.w3schools.com/css/css_syntax.asp
+-https://www.w3schools.com/howto/howto_css_rounded_images.asp
+-https://www.w3schools.com/css/css_colors.asp
+-https://www.w3schools.com/css/css_boxmodel.asp
+-https://www.w3schools.com/html/html_filepaths.asp
+-https://www.youtube.com/watch?v=7IaqdnU44rQ
+-https://www.youtube.com/watch?v=azZCW24XtT4
 
 5. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
-
+- no one, by myself.
 
 
 6. Is there anything special we need to know in order to run your code?
-
+-nope, just run index.html
