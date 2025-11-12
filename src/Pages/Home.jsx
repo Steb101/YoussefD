@@ -7,8 +7,9 @@ import { TextScramble } from '../Components/effects/TextScramble'
 import { Button } from '../Components/ui/Button'
 import { Input } from '../Components/ui/Input'
 import { Mail, Download } from 'lucide-react'
+import avatarUrl from '../assets/IMG_1357.jpg';
 
-const resumePdf = import.meta.env.BASE_URL + "images/Youssef%20Dessouky%20.pdf";
+const resumePdf = import.meta.env.BASE_URL + "images/youssef-dessouky.pdf";
 
 export default function Home() {
   const [messages, setMessages] = useState([{ role: 'assistant', content: 'Hello! This is a UI demo of a chat interface. Try sending messages below!' }]);
@@ -65,7 +66,7 @@ export default function Home() {
           </TextScramble>
 
           <motion.img
-            src={import.meta.env.BASE_URL + "images/IMG_1357.jpg"}
+            src={avatarUrl}
             alt="Youssef Dessouky"
             className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover mx-auto border-4 border-neutral-100/20 shadow-2xl"
             initial={{ opacity: 0, scale: 0.8 }}
@@ -214,7 +215,7 @@ export default function Home() {
           exit={{ opacity: 0, y: -20 }}
           className="absolute top-4 right-4 z-10"
         >
-          <a href={import.meta.env.BASE_URL + "images/Youssef%20Dessouky%20.pdf"} download>
+          <a href={import.meta.env.BASE_URL + "images/Youssef-Dessouky.pdf"} download>
             <Button size="lg" className="bg-neutral-100 hover:bg-neutral-200 text-neutral-900 rounded-full px-8 shadow-lg">
               <Download className="mr-2 h-4 w-4" />
               Download

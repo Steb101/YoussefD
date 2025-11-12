@@ -38,7 +38,7 @@ export default function Resume() {
           onMouseLeave={() => setIsHoveringResume(false)}
         >
           <object
-            data="/images/Youssef Dessouky .pdf"
+            data="/images/Youssef-Dessouky.pdf"
             type="application/pdf"
             className="w-full"
             style={{ height: '1000px' }}
