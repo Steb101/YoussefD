@@ -8,7 +8,7 @@ import { Button } from '../Components/ui/Button'
 import { Input } from '../Components/ui/Input'
 import { Mail, Download } from 'lucide-react'
 
-const resumePdf = "/images/Youssef%20Dessouky%20.pdf";
+const resumePdf = import.meta.env.BASE_URL + "images/Youssef%20Dessouky%20.pdf";
 
 export default function Home() {
   const [messages, setMessages] = useState([{ role: 'assistant', content: 'Hello! This is a UI demo of a chat interface. Try sending messages below!' }]);
@@ -25,13 +25,14 @@ export default function Home() {
   };
 
   const galleryImages = [
-    { url: '/images/image0.jpg', caption: 'My Nosy Son' },
-    { url: '/images/image15.jpg', caption: 'My Adorable Son' },
-    { url: '/images/IMG_4101.png', caption: 'Solo Adventure from California -> New York -> Montreal, Canada' },
-    { url: '/images/mountain.png', caption: 'Hiking Californian Mountains' },
-    { url: '/images/museum.png', caption: 'Art' },
-    { url: '/images/pyramid.png', caption: 'Home.' }
-  ];
+    { url: import.meta.env.BASE_URL + "images/image0.jpg", caption: "My Nosy Son" },
+     { url: import.meta.env.BASE_URL + "images/image15.jpg", caption: "My Adorable Son" },
+     { url: import.meta.env.BASE_URL + "images/IMG_4101.png", caption: "Solo Adventure from California -> New York -> Montreal, Canada" },
+     { url: import.meta.env.BASE_URL + "images/mountain.png", caption: "Hiking Californian Mountains" },
+     { url: import.meta.env.BASE_URL + "images/museum.png", caption: "Art" },
+     { url: import.meta.env.BASE_URL + "images/pyramid.png", caption: "Home." }
+   ];
+
 
   const contactLinks = [
     { icon: Mail, label: 'Email', value: 'dessouky2003@gmail.com', href: 'mailto:dessouky2003@gmail.com', color: 'text-red-400' }
@@ -64,7 +65,7 @@ export default function Home() {
           </TextScramble>
 
           <motion.img
-            src="/images/IMG_1357.jpg"
+            src={import.meta.env.BASE_URL + "images/IMG_1357.jpg"}
             alt="Youssef Dessouky"
             className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover mx-auto border-4 border-neutral-100/20 shadow-2xl"
             initial={{ opacity: 0, scale: 0.8 }}
@@ -199,7 +200,7 @@ export default function Home() {
 
       <div className="relative bg-neutral-900/50 rounded-2xl shadow-2xl overflow-hidden">
         <embed
-          src="/images/Youssef%20Dessouky%20.pdf#toolbar=0&navpanes=0&scrollbar=0"
+          src={ (import.meta.env.BASE_URL + "images/Youssef%20Dessouky%20.pdf") + "#toolbar=0&navpanes=0&scrollbar=0" }
           type="application/pdf"
           className="w-full"
           style={{ height: '1000px' }}
@@ -213,7 +214,7 @@ export default function Home() {
           exit={{ opacity: 0, y: -20 }}
           className="absolute top-4 right-4 z-10"
         >
-          <a href="/images/Youssef%20Dessouky%20.pdf" download>
+          <a href={import.meta.env.BASE_URL + "images/Youssef%20Dessouky%20.pdf"} download>
             <Button size="lg" className="bg-neutral-100 hover:bg-neutral-200 text-neutral-900 rounded-full px-8 shadow-lg">
               <Download className="mr-2 h-4 w-4" />
               Download
