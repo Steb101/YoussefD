@@ -7,9 +7,9 @@ import { TextScramble } from '../Components/effects/TextScramble'
 import { Button } from '../Components/ui/Button'
 import { Input } from '../Components/ui/Input'
 import { Mail, Download } from 'lucide-react'
-import avatarUrl from '../images/IMG_1357.jpg';
 
-const resumePdf = import.meta.env.BASE_URL + "images/youssef-dessouky.pdf";
+const avatarUrl = import.meta.env.BASE_URL + "images/IMG_1357.jpg";
+const resumePdf = import.meta.env.BASE_URL + "images/Youssef-Dessouky.pdf";
 
 export default function Home() {
   const [messages, setMessages] = useState([{ role: 'assistant', content: 'Hello! This is a UI demo of a chat interface. Try sending messages below!' }]);
