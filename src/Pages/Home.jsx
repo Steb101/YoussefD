@@ -8,7 +8,7 @@ import { Button } from '../Components/ui/Button'
 import { Input } from '../Components/ui/Input'
 import { Mail, Download } from 'lucide-react'
 
-const avatarUrl = import.meta.env.BASE_URL + "images/IMG_1357.jpg";
+
 const resumePdf = import.meta.env.BASE_URL + "images/Youssef-Dessouky.pdf";
 
 export default function Home() {
@@ -66,7 +66,7 @@ export default function Home() {
           </TextScramble>
 
           <motion.img
-            src={avatarUrl}
+            src={import.meta.env.BASE_URL + "images/IMG_1357.jpg"}
             alt="Youssef Dessouky"
             className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover mx-auto border-4 border-neutral-100/20 shadow-2xl"
             initial={{ opacity: 0, scale: 0.8 }}

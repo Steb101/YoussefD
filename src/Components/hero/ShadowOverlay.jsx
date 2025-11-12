@@ -142,6 +142,8 @@ export function ShadowOverlay({
           }}
         />
       )}
+
+      {children}
     </div>
   );
 }
