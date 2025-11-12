@@ -7,7 +7,7 @@ import { TextScramble } from '../Components/effects/TextScramble'
 import { Button } from '../Components/ui/Button'
 import { Input } from '../Components/ui/Input'
 import { Mail, Download } from 'lucide-react'
-import avatarUrl from '../assets/IMG_1357.jpg';
+import avatarUrl from '../images/IMG_1357.jpg';
 
 const resumePdf = import.meta.env.BASE_URL + "images/youssef-dessouky.pdf";
 
@@ -201,7 +201,7 @@ export default function Home() {
 
       <div className="relative bg-neutral-900/50 rounded-2xl shadow-2xl overflow-hidden">
         <embed
-          src={ (import.meta.env.BASE_URL + "images/Youssef%20Dessouky%20.pdf") + "#toolbar=0&navpanes=0&scrollbar=0" }
+          src={ (import.meta.env.BASE_URL + "images/Youssef-Dessouky.pdf") + "#toolbar=0&navpanes=0&scrollbar=0" }
           type="application/pdf"
           className="w-full"
           style={{ height: '1000px' }}
